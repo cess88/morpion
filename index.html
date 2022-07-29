@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href=assets/css/style.css>
+    <title>Morpion</title>
+</head>
+
+<body>
+    <header>
+        <h1>Super Morpion</h1>
+    </header>
+    <main>
+        <div>
+            <span id="playerone">joueur 👽 :</span>
+            <span id="playertwo">joueur 😼 :</span>
+            <div>
+                <p></p>
+            </div>
+        </div>
+        <div id="img"> </div>
+        <div>
+            <button class="joueur" onclick="setModeOnePlayer()">1 joueur</button>
+            <button class="joueur" onclick="setModeTwoPlayer()">2 joueurs</button>
+        </div>
+        <table>
+            
+            <tr>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+                <td onclick="displaysymbol(this)"></td>
+            </tr>
+
+        </table>
+
+        <button class="replay" onclick="restart()">rejouer</button>
+
+    </main>
+
+
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
